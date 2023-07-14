@@ -7,6 +7,5 @@ def first_task(number):
         result += f"{text}\n"
     return result
         
-    
 
 print(first_task(9))
