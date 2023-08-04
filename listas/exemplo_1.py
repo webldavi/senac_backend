@@ -1,28 +1,9 @@
-fruits = [
-    {
-        "nome": "Maçã",
-        "price": 1
-    },
-    {
-        "nome": "Banana",
-        "price": 2
-    },
-    {
-        "nome": "Uva",
-        "price": 3
-    },
-    {
-        "nome": "Melão",
-        "price": 4
-    }, 
-    {
-        "nome": "Laranja",
-        "price": 5
-    },
-    {
-        "nome": "Abacaxi",
-        "price": 6
-    }
-]
+class teste:
+    test = 1
 
-print(fruits[-3]["nome"])
+class teste2(teste):
+    def imprimir(self):
+        print(self.test)
+
+aaa = teste2()
+aaa.imprimir()

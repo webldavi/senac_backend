@@ -1,76 +1,45 @@
-# class Ball:
-#     def __init__(self, color, radius, material):
-#         self.color = color
-#         self.radius = radius
-#         self.material = material
+class User:
+    __teste = 'dwdw'
+    def __init__(self, username, password, email, phone):
+        self.username = username
+        self.password = password
+        self.email = email
+        self.phone = phone
 
-#     def switch_color(self, color):
-#         self.color = color
+    def get_username(self):
+        return self.username
 
-#     def get_color(self):
-#         return self.color
+    @property
+    def get_teste(self):
+        return self.__teste
 
+    @get_teste.setter
+    def set_teste(self, teste):
+        self.__teste = teste
+        
+    def get_email(self):
+        return self.email
 
-# bola = Ball("red", 15, "borracha")
-# print(bola.get_color())
-# bola.switch_color("Blue")
-# print(bola.get_color())
+    def get_phone(self):
+        return self.phone
 
+    def get_username(self):
+        return self.username
 
-# class Square:
-#     def __init__(self, width):
-#         self.width = width
+    def get_password(self):
+        return self.password
 
-#     def switch_width(self, width):
-#         self.width = width
+    def alter_password(self, password):
+        self.password = password
 
-#     def get_width(self):
-#         return self.width
+    def alter_email(self, email):
+        self.email = email
 
-#     def area(self):
-#         return self.width ** 2
+    def alter_phone(self, phone):
+        self.phone = phone
 
+    def alter_username(self, username):
+        self.username = username
 
-class Rectangle:
-    def __init__(self, side_a, side_b):
-        self.side_a = side_a
-        self.side_b = side_b
-
-    def switch_side_a(self, side_a):
-        self.side_a = side_a
-
-    def switch_side_b(self, side_b):
-        self.side_b = side_b
-
-    def get_side_a(self):
-        return self.side_a
-
-    def get_side_b(self):
-        return self.side_b
-
-    def area(self):
-        return self.side_a * self.side_b
-
-    def perimeter(self):
-        return self.side_a * 2 + self.side_b * 2
-
-
-# Programa principal
-side_a = int(input("Tamanho do lado A: "))
-side_b = int(input("Tamanho do lado B: "))
-
-rectangle = Rectangle(side_a, side_b)
-
-area = rectangle.area()
-
-perimeter = rectangle.perimeter()
-
-
-print("\n")
-print(f"Área: {area}")
-
-print(f"Perímetro: {perimeter}")
-
-print(f"Quantidade de pisos que medem 1 metro: {area}")
-
-print(f"Quantidade de rodapés que medem 2 metro: {perimeter}")
+    def alter_username(self, username):
+        self.username = username
